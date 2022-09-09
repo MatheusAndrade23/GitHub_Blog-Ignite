@@ -10,6 +10,7 @@ export const PostCardContainer = styled.div`
 
   border: 2px solid transparent;
   background-color: ${({ theme }) => theme.colors["base-post"]};
+  box-shadow: 0px 2px 28px rgba(0, 0, 0, 0.2);
 
   & div {
     width: 100%;
