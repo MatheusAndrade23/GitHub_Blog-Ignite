@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 
 export const PostCardContainer = styled.div`
-  width: 41.6rem;
+  width: 50rem;
   height: 26rem;
   cursor: pointer;
 
@@ -20,7 +20,6 @@ export const PostCardContainer = styled.div`
   }
 
   & h3 {
-    width: 25rem;
     color: ${({ theme }) => theme.colors["base-title"]};
     font-size: ${({ theme }) => theme.fonts.sizes.medium2};
   }
@@ -28,6 +27,7 @@ export const PostCardContainer = styled.div`
   & span {
     min-width: max-content;
     margin-top: 0.6rem;
+    margin-left: 1rem;
     color: ${({ theme }) => theme.colors["base-text"]};
     font-size: ${({ theme }) => theme.fonts.sizes.small2};
   }
@@ -36,6 +36,9 @@ export const PostCardContainer = styled.div`
     margin-top: 3rem;
     color: ${({ theme }) => theme.colors["base-text"]};
     font-size: ${({ theme }) => theme.fonts.sizes.small3};
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   &:hover {

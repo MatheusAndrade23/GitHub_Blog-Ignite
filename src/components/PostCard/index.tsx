@@ -1,17 +1,18 @@
 import { PostCardContainer } from "./styles";
 
-export const PostCard = () => {
+import { PostType } from "../../pages/Home";
+import { getDistance } from "../../utils/formatDate";
+
+export const PostCard = ({ title, body, created_at, number }: PostType) => {
   return (
-    <PostCardContainer onClick={() => (window.location.href = "/")}>
+    <PostCardContainer
+      onClick={() => (window.location.href = `/post/${number}`)}
+    >
       <div>
-        <h3>JavaScript data types and data structures</h3>
-        <span>Há 1 dia</span>
+        <h3>{title}</h3>
+        <span>{"Há " + getDistance(created_at)}</span>
       </div>
-      <p>
-        Programming languages all have built-in data structures, but these often
-        differ from one language to another. This article attempts to list the
-        built-in data structures available in...
-      </p>
+      <p>{body}</p>
     </PostCardContainer>
   );
 };

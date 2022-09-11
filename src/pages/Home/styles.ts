@@ -6,6 +6,8 @@ export const HomeContainer = styled.main`
   align-items: center;
   justify-content: center;
   width: 100%;
+  max-width: 110rem;
+  margin: 0 auto;
 
   padding: 2rem 4rem;
   margin-top: -7rem;
@@ -15,9 +17,9 @@ export const PostsContainer = styled.div`
   width: 100%;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 
-  gap: 2rem;
+  gap: 2.5rem;
 `;
 
 export const SearchForm = styled.form`

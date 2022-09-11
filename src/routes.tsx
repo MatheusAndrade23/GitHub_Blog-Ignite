@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 
 import { Home } from "./pages/Home";
+import { Post } from "./pages/Post";
 
 import { Header } from "./components/Header";
 import { theme } from "./styles/theme";
@@ -20,6 +21,7 @@ export const Routes = () => {
         <Header />
         <Switch>
           <Route path="/" element={<Home />} />
+          <Route path="/post/:postNumber" element={<Post />} />
         </Switch>
         <GlobalStyles />
       </ThemeProvider>
