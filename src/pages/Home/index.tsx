@@ -28,7 +28,9 @@ export type PostType = {
   number: number;
   comments: number;
   login: string;
-  user: Object;
+  user: {
+    login: string;
+  };
 };
 
 interface UserProps {
@@ -57,6 +59,7 @@ export const Home = () => {
             q: "repo:MatheusAndrade23/GitHub_Blog-Ignite is:issue",
           },
         });
+        console.log(issues);
         setUser({ ...userData, posts: issues.data.items });
       } catch (error) {
         console.log(error);

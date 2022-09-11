@@ -6,7 +6,7 @@ export const HomeContainer = styled.main`
   align-items: center;
   justify-content: center;
   width: 100%;
-  max-width: 110rem;
+  max-width: 120rem;
   margin: 0 auto;
 
   padding: 2rem 4rem;
