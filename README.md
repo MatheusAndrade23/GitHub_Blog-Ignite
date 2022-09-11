@@ -1,23 +1,25 @@
-<h1 align="center">GitHub Blog 📃</h1>
+<h1 align="center">GitHub Blog 💻</h1>
 
 <div align="center">
   <img src="./src/assets/Cover.png" alt="Cover" width="700px"/>
 </div>
 
 
-<br>
-
 <h3 align="center">GitHub Blog desenvolvido com React + bibliotecas como desafio do ignite, da Rocketseat.</h3>
 
-<br>
+<h4 align="center">Neste projeto, cada issue criada nesse repositório é um post do nosso blog. Todos os dados do usuário e dos posts (issues) são obtidos através da API do GitHub.</h4>
 
 ---
 
-<br>
+<h2>Design 🎨</h2>
+
+_<h3>Home</h3>_
 
 <img src="./github/home.png" alt="Home Image"/>
 
-<br>
+##
+
+_<h3>Post</h3>_
 
 <img src="./github/post.png" alt="Post Image"/>
 
@@ -29,9 +31,7 @@
 
 - Axios
 - React Icons
-- React Toastify
 - React Hook Form
-- Zod Resolver
 - Typescript
 - Date-fns
 - React Router Dom
