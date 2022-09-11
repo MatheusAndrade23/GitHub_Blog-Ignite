@@ -1,6 +1,9 @@
 <h1 align="center">GitHub Blog 📃</h1>
 
-<img src="./src/assets/Cover.png" alt="Cover" width="700px"/>
+<div align="center">
+  <img src="./src/assets/Cover.png" alt="Cover" width="700px"/>
+</div>
+
 
 <br>
 
