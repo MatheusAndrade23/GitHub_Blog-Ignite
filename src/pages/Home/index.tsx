@@ -59,7 +59,6 @@ export const Home = () => {
             q: "repo:MatheusAndrade23/GitHub_Blog-Ignite is:issue",
           },
         });
-        console.log(issues);
         setUser({ ...userData, posts: issues.data.items });
       } catch (error) {
         console.log(error);
